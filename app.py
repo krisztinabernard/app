@@ -4,6 +4,20 @@ import pandas as pd
 from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
 
+# Correction du champ password trop sombre
+st.markdown(
+    """
+    <style>
+    input[type="password"], input[type="text"] {
+        background-color: #FFFFFF !important;   /* fond blanc */
+        color: #0D1B2A !important;               /* texte bleu foncé */
+        border: 1px solid #0ABAB5 !important;    /* bord turquoise */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 df_users = pd.read_csv("users.csv")
 
 img_home ="https://gifdb.com/images/high/standing-ovation-crowd-applause-oscar-awards-ai72icmh1ac7apdz.gif"
@@ -80,6 +94,7 @@ elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplie')
+
 
 
 
