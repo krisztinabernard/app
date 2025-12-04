@@ -52,8 +52,8 @@ def accueil():
             options = ["Accueil", "Photos"]
         )
     if selection == "Accueil":
-        st.write("Bienvenue sur la page d'accueil !")
-        st.image(img_home)
+        st.header("Bienvenue sur la page d'accueil !")
+        st.image(img_home, width=600)
     elif selection == "Photos":
         st.write("Bienvenue sur mon album photo")
         
@@ -80,6 +80,7 @@ elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplie')
+
 
 
 
