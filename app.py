@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-import streamlit as st
 from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
 
-df_users = pd.read_csv(r"C:\Users\kwind\Documents\quete-streamlit\users.csv")
+df_users = pd.read_csv("users.csv")
 
 img_home ="https://gifdb.com/images/high/standing-ovation-crowd-applause-oscar-awards-ai72icmh1ac7apdz.gif"
 img_1 = "https://s1.qwant.com/thumbr/474x355/0/8/71a93663bbffe0d65f3d9d8b92e2033c77ceb78585261049a5ed29f6097c33/OIP.xG6quNdG9X8OoE1CgnDahwHaFj.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.xG6quNdG9X8OoE1CgnDahwHaFj%3Fpid%3DApi&q=0&b=1&p=0&a=0"
@@ -81,5 +80,6 @@ elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplie')
+
 
 
