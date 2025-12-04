@@ -4,17 +4,3 @@ backgroundColor="#F5F7FA"
 secondaryBackgroundColor="#0D1B2A"
 textColor="#0D1B2A"
 font="sans serif"
-
-# Correction du champ password trop sombre
-st.markdown(
-    """
-    <style>
-    input[type="password"], input[type="text"] {
-        background-color: #FFFFFF !important;   /* fond blanc */
-        color: #0D1B2A !important;               /* texte bleu foncé */
-        border: 1px solid #0ABAB5 !important;    /* bord turquoise */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
