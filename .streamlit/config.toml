@@ -1,6 +1,6 @@
 [theme]
-primaryColor="#0ABAB5"
-backgroundColor="#F5F7FA"
-secondaryBackgroundColor="#0D1B2A"
-textColor="#0D1B2A"
+primaryColor="#0ABAB5"             # Turquoise
+backgroundColor="#F5F7FA"         # Fond clair pro
+secondaryBackgroundColor="#2F3A4A" # Gris foncé doux
+textColor="#0D1B2A"               # Bleu foncé
 font="sans serif"
